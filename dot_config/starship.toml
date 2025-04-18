@@ -1,0 +1,24 @@
+format = "$all"
+
+right_format = "$cmd_duration"
+
+[os]
+disabled = false
+
+[cmd_duration]
+min_time = 0
+show_milliseconds = true
+
+[time]
+disabled = false
+time_format = '%T'
+
+[username]
+disabled = false
+show_always = true
+
+[line_break]
+disabled = false
+
+[hostname]
+ssh_only = false
