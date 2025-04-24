@@ -17,5 +17,12 @@ function dup
     echo -e "\x1b[33;49mSystem: Installing updates\x1b[0m" 
     sudo dnf distro-sync
     echo -e "\x1b[33;49mFlatpak: Updating applications\x1b[0m" 
+    flatpak update
+end
+
+function dupy
+    echo -e "\x1b[33;49mSystem: Installing updates\x1b[0m" 
+    sudo dnf -y distro-sync
+    echo -e "\x1b[33;49mFlatpak: Updating applications\x1b[0m" 
     flatpak update -y
 end
