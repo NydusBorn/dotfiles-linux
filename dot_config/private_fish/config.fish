@@ -15,7 +15,7 @@ zoxide init fish --cmd cd | source
 
 function dup
     echo -e "\x1b[33;49mSystem: Installing updates\x1b[0m" 
-    sudo dnf upgrade
+    sudo dnf distro-sync
     echo -e "\x1b[33;49mFlatpak: Updating applications\x1b[0m" 
     flatpak update -y
 end
